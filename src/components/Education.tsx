@@ -87,6 +87,18 @@ export default function Education() {
                       <DocumentTextIcon className="w-5 h-5" />
                       Download Transcript (PDF)
                     </a>
+
+                    {/* Recommendation Letter for USD */}
+                    {edu.institution === "University of San Diego" && (
+                      <motion.a
+                        href="/Website_NoahWilliamShaffer/myeducation/Recommendation for Mr. Noah William Shaffer.pdf"
+                        download
+                        className="text-blue-600 dark:text-blue-400 hover:underline inline-block mt-2"
+                        whileHover={{ scale: 1.05 }}
+                      >
+                        Letter of Recommendation from Dr. Haydar Majeed, Director of the Cybersecurity Program at USD
+                      </motion.a>
+                    )}
                   </div>
                 </div>
               </motion.div>
